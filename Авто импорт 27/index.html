@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Авто Импорт 27 | Параллельный импорт авто из Китая, Кореи, Японии</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link href="https://googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Уведомление (для демонстрации) -->
+    <div id="notification" class="notification">
+        <div class="notification-content">
+            <span class="notification-icon">✅</span>
+            <span class="notification-text">Ваша заявка принята! Ожидайте звонка от нашего менеджера.</span>
+            <button class="notification-close" onclick="closeNotification()">&times;</button>
+        </div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">АВТО ИМПОРТ <span>27</span></a>
+            <nav class="nav-links">
+                <a href="#catalog">Направления</a>
+                <a href="#advantages">Преимущества</a>
+                <a href="#steps">Схема работы</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <a href="https://web.max.ru/39429255" target="_blank" class="nav-max">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="currentColor"/>
+                    <path d="M16.59 7.58L10 14.17L7.41 11.58L6 13L10 17L18 9L16.59 7.58Z" fill="currentColor"/>
+                </svg>
+                <span>MAX</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="badge">🚗 Импорт автомобилей из Азии</span>
+            <h1>Честные автомобили из <br /><span class="text-gradient">Китая, Кореи и Японии</span></h1>
+            <p class="hero-text">Полная пошлина, прозрачный договор, подбор под ваш бюджет и доставка до Комсомольска с гарантией сохранности.</p>
+            <div class="hero-buttons">
+                <a href="https://web.max.ru/39429255" target="_blank" class="btn btn-max">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="currentColor"/>
+                        <path d="M16.59 7.58L10 14.17L7.41 11.58L6 13L10 17L18 9L16.59 7.58Z" fill="currentColor"/>
+                    </svg>
+                    Связаться в MAX
+                </a>
+                <a href="#catalog" class="btn btn-secondary">Смотреть направления</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Направления -->
+    <section id="catalog" class="section">
+        <div class="container">
+            <h2 class="section-title">Параллельный импорт из <span>3 стран</span></h2>
+            <div class="grid grid-3">
+                <div class="card country-card">
+                    <div class="card-badge">JDM</div>
+                    <h3>Япония</h3>
+                    <p>Только правый руль. Можно приобрести любой автомобиль — японский или европейский бренд (с правым рулём).</p>
+                    <ul class="card-list">
+                        <li>Аукционы: USS, TAA, CAA</li>
+                        <li>Срок: от 3 недель</li>
+                    </ul>
+                </div>
+                <div class="card country-card highlight">
+                    <div class="card-badge">Левый руль</div>
+                    <h3>Южная Корея</h3>
+                    <p>Только левый руль. Корейские и европейские автомобили в отличном состоянии.</p>
+                    <ul class="card-list">
+                        <li>Kia, Hyundai, BMW, Mercedes и др.</li>
+                        <li>Срок: от 4 недель</li>
+                    </ul>
+                </div>
+                <div class="card country-card">
+                    <div class="card-badge">Левый руль</div>
+                    <h3>Китай</h3>
+                    <p>Левый руль. Китайские, корейские, японские и европейские бренды (сборка в Китае). В основном б/у, но также новые (с пробегом для вывоза). Выкупаем у местных дилеров и на рынках.</p>
+                    <ul class="card-list">
+                        <li>Geely, BYD, Chery, Volkswagen и др.</li>
+                        <li>Срок: от 4 недель</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="advantages" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают <span>Авто Импорт 27</span></h2>
+            <div class="grid grid-4">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🚢</div>
+                    <h4>Выдача во Владивостоке (стоянки)</h4>
+                    <p>Забирайте авто на специальных стоянках в порту или закажите доставку в любой город России.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📦</div>
+                    <h4>Доставка по всей РФ</h4>
+                    <p>Отправляем машины в любой регион — от Калининграда до Камчатки.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">✓</div>
+                    <h4>100% Прозрачно</h4>
+                    <p>Никаких скрытых комиссий. Все расходы прописаны в договоре до начала торгов.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">✓</div>
+                    <h4>Экспертный подбор</h4>
+                    <p>Проверяем историю, аукционный лист и реальное состояние кузова перед покупкой.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Схема работы -->
+    <section id="steps" class="section">
+        <div class="container">
+            <h2 class="section-title">Всего <span>4 шага</span> до вашего авто</h2>
+            <div class="steps-flow">
+                <div class="step-node">
+                    <div class="step-number">01</div>
+                    <h5>Договор</h5>
+                    <p>Обсуждаем параметры, бюджет и фиксируем условия.</p>
+                </div>
+                <div class="step-node">
+                    <div class="step-number">02</div>
+                    <h5>Подбор и покупка</h5>
+                    <p>Ищем варианты, согласовываем с вами и выкупаем.</p>
+                </div>
+                <div class="step-node">
+                    <div class="step-number">03</div>
+                    <h5>Логистика и ТО</h5>
+                    <p>Доставляем морем, проходим таможню и лабораторию.</p>
+                </div>
+                <div class="step-node">
+                    <div class="step-number">04</div>
+                    <h5>Выдача</h5>
+                    <p>Встречайте автомобиль на стоянке во Владивостоке или с доставкой в ваш город!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Реальные <span>отзывы</span> клиентов</h2>
+            <div class="grid grid-3">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">А</div>
+                        <div>
+                            <div class="review-name">Алексей</div>
+                            <div class="review-city">г. Владивосток</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Заказал Toyota Land Cruiser из Японии. Всё сделали четко: подобрали, выкупили, пригнали во Владивосток. Документы в порядке, машина — огонь. Спасибо!»</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">Е</div>
+                        <div>
+                            <div class="review-name">Екатерина</div>
+                            <div class="review-city">г. Москва</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Заказывали Geely из Китая с доставкой в Москву. Отслеживали весь путь, менеджер всегда был на связи. Пришла вовремя, без повреждений. Очень довольны!»</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">И</div>
+                        <div>
+                            <div class="review-name">Игорь</div>
+                            <div class="review-city">г. Хабаровск</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Покупал Kia из Кореи. Ребята подобрали отличный вариант по бюджету. Доставили во Владивосток, я сам забрал. Всё прозрачно, без обмана. Рекомендую!»</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="section">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с <span>нами</span></h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-badge">📍 Выдача</div>
+                    <h3>Пункт выдачи (стоянки)</h3>
+                    <p>г. Владивосток,<br />ул. Корабельная, д. 6</p>
+                    <p style="font-size: 13px; color: var(--accent);">Портовая зона, стоянки</p>
+                    <p style="font-size: 13px; color: var(--text-gray); margin-top: 12px;">🚚 Доставка в любой город РФ</p>
+                </div>
+
+                <div class="card highlight" style="text-align:center;">
+                    <div class="card-badge">💬 На связи</div>
+                    <h3>Напишите нам в MAX</h3>
+                    <p style="margin-bottom: 16px;">Ответим на все вопросы, подберем авто и рассчитаем стоимость.</p>
+                    <a href="https://web.max.ru/39429255" target="_blank" class="btn btn-max" style="display:inline-flex; justify-content:center; width:100%;">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="currentColor"/>
+                            <path d="M16.59 7.58L10 14.17L7.41 11.58L6 13L10 17L18 9L16.59 7.58Z" fill="currentColor"/>
+                        </svg>
+                        Написать в MAX
+                    </a>
+                    <p style="font-size:13px; color:var(--text-gray); margin-top:12px;">Режим работы: ежедневно с 08:00 до 19:00</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-badge">📞 Звонок</div>
+                    <h3>Позвоните нам</h3>
+                    <p><a href="tel:+79622877403" class="phone-link">+7 (962) 287-74-03</a></p>
+                    <p style="font-size:13px; color:var(--text-gray); margin-top:8px;">Мы на картах:</p>
+                    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:4px;">
+                        <a href="https://2gis.ru/komsomolsk-on-amur/firm/70000001111466870?m=137.004344%2C50.576705%2F16" target="_blank" style="color:var(--text-gray); font-size:13px; text-decoration:none; transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-gray)'">2ГИС</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <p class="footer-logo">АВТО ИМПОРТ <span>27</span></p>
+                <p class="copy">© 2026 Авто Импорт 27. Все права защищены.</p>
+            </div>
+            <div class="footer-maps">
+                <span style="font-size:13px; color:var(--text-gray);">Мы на картах:</span>
+                <a href="https://2gis.ru/komsomolsk-on-amur/firm/70000001111466870?m=137.004344%2C50.576705%2F16" target="_blank">2ГИС</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Плавающая кнопка MAX -->
+    <a href="https://web.max.ru/39429255" target="_blank" class="max-float">
+        <div class="pulse"></div>
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="white"/>
+            <path d="M16.59 7.58L10 14.17L7.41 11.58L6 13L10 17L18 9L16.59 7.58Z" fill="white"/>
+        </svg>
+    </a>
+
+    <script>
+        function showNotification() {
+            const notif = document.getElementById('notification');
+            notif.classList.add('show');
+            clearTimeout(window.notifTimeout);
+            window.notifTimeout = setTimeout(() => {
+                closeNotification();
+            }, 5000);
+        }
+
+        function closeNotification() {
+            const notif = document.getElementById('notification');
+            notif.classList.remove('show');
+            clearTimeout(window.notifTimeout);
+        }
+    </script>
+
+</body>
+</html>
